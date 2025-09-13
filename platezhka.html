@@ -2,6 +2,7 @@
 <html lang="it">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://db.onlinewebfonts.com/c/69c633b2a4e41e8101c6f4f149655d5e?family=ING+Me+Regular">
 
   <title>ING Login</title>
@@ -36,6 +37,7 @@
   }
 }
     .container {
+      overflow: hidden;
       flex: 1;
       display: flex;
       justify-content: center;
@@ -203,22 +205,64 @@ footer .bottom-text {
   
 }
 @media (max-width: 740px) {
-    .footer-columns  {
-  display: flex;
-  text-align: center;
-  margin: 0 auto;
-  flex-direction: column;
-  gap: 10px; /* відстань між посиланнями */
-  
-}
-footer .bottom-text {
-  width: 100%;
-  text-align: center;
-  margin-top: 30px;
-  color: #555;
+  footer {
+    padding: 20px 10px;
+    font-size: 11px;
+  }
 
+  .footer-columns {
+    flex-direction: column;
+    gap: 8px;
+    text-align: center;
+  }
+
+  .footer-columns .col {
+    gap: 6px;
+  }
+
+  footer a {
+    font-size: 13px;
+  }
+
+  footer .bottom-text {
+    margin-top: 20px;
+    font-size: 11px;
+    margin-right: 0; /* прибираємо зміщення вправо */
+  }
 }
+@media (max-width: 740px) {
+  .login-box {
+    width: 80%;          
+    max-width: 500px;    
+    padding: 25px 25px 15px 25px;
+    border-radius: 15px;
+  }
+
+  .login-box h2 {
+    font-size: 26px;
+    padding-bottom: 20px;
+  }
+
+  .confermaContainer {
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+  }
+
+  input{
+      text-align: center;
+      width: 60%;
+  }
+  .push-box input {
+    font-size: 16px;
+  }
+
+  .push-box button {
+    width: 100%;
+    font-size: 16px;
+  }
 }
+
   </style>
 </head>
 <body>
